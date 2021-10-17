@@ -2,7 +2,7 @@
 - Clone/unzip repo.
 - Run the command `docker-compose up -d`
 - Open browser and open `http://localhost:8000/admin/djangoapp/companies/`
-- Use default username and password of `admin` and `admin`
+- Use default username and password of `admin` and `admin` to access the listing and filters.
 
 
 ### Some additional Details
@@ -12,3 +12,4 @@
 - Used django admin with customised list and filters to achieve the task.
 - Have used a management command that runs at start to load csv data to a DB and create the first superuser.
 - Have diabled add, edit and delete from django admin interface to be inline with the requirement of only list and fitlers.
+- Search works on company name and ticker symbol.
