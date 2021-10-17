@@ -37,8 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'drf_yasg',
     'djangoapp',
 ]
 
@@ -151,16 +149,4 @@ LOGGING = {
     }
 }
 
-# DRF
-REST_FRAMEWORK = {
-    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
-}
-
-# CELERY
-CELERY_BROKER_URL = 'amqp://dj_broker'
-CELERY_RESULT_BACKEND = 'amqp://dj_broker'
-CELERY_ACCEPT_CONTENT = ['application/json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
